@@ -1,0 +1,6 @@
+{
+  "i18n-ally.localesPaths": [
+    "app/lang",
+    "public/media/lang"
+  ]
+}

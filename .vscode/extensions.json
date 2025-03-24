@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "antfu.where-am-i",
+    "lokalise.i18n-ally",
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig",
+    "naumovs.color-highlight",
+    "richie5um2.vscode-sort-json",
+    "unional.vscode-sort-package-json",
+    "antfu.goto-alias",
+    "davidanson.vscode-markdownlint",
+    "nuxtr.nuxtr-vscode",
+    "ms-vscode.sublime-keybindings"
+  ]
+}

@@ -1,0 +1,97 @@
+@import 'tailwindcss';
+
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:where(.dark, .dark :not(:where([class~=not-dark],[class~=not-dark] *))));
+@custom-variant data-active (&[data-active="true"]);
+
+@theme {
+  /* https://tailwindcss.com/docs/theme#theme-variable-namespaces */
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 60rem;
+  --breakpoint-desktop: 60rem;
+  --breakpoint-lg: 80rem;
+  --breakpoint-xl: 100rem;
+  --breakpoint-2xl: 120rem;
+
+  --font-body: 'Open Sans', 'sans-serif';
+  --font-headings: 'Open Sans', 'serif';
+
+  --color-primary: #307fe2;
+  --color-light-background: #ffffff;
+  --color-light-foreground: #333333;
+  --color-dark-background: #1a2e51;
+  --color-dark-foreground: #eeeeee;
+
+  --ease-in-back: cubic-bezier(0.7, 0.01, 0.75, -0.4);
+  --ease-out-back: cubic-bezier(0.25, 1.4, 0.3, 0.99);
+}
+
+@layer base {
+  html {
+    @apply w-full min-w-[320px] overflow-auto;
+  }
+
+  body {
+    @apply font-body text-light-foreground dark:text-dark-foreground text-base leading-loose font-normal tracking-normal;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply my-1 font-bold;
+  }
+
+  h1 {
+    @apply font-headings text-light-foreground dark:text-dark-foreground mb-4 text-3xl leading-normal font-normal tracking-normal;
+    &.small {
+      @apply text-2xl;
+    }
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  a {
+    @apply focus-visible:outline-primary hover:underline hover:underline-offset-2 focus:outline-hidden focus-visible:outline-2 focus-visible:outline-offset-2;
+  }
+
+  p {
+    @apply mb-2.5;
+  }
+
+  p,
+  span {
+    &.small {
+      @apply text-sm font-light;
+      &.strong {
+        @apply font-semibold;
+      }
+      &.link {
+        @apply text-primary font-normal;
+      }
+    }
+    &.big {
+      @apply text-lg font-medium;
+      &.strong {
+        @apply font-extrabold;
+      }
+      &.link {
+        @apply text-primary;
+      }
+    }
+  }
+
+  button,
+  .btn {
+    @apply bg-primary text-dark-foreground hover:bg-primary/90 focus-visible:outline-primary inline-flex cursor-pointer justify-center rounded-md px-3 py-2 text-sm font-semibold shadow-xs focus:outline-hidden focus-visible:outline-2 focus-visible:outline-offset-2;
+  }
+}
+
+@layer components {
+}
