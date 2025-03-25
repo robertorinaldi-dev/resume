@@ -1,8 +1,18 @@
 profile:
   name: Roberto Rinaldi
-  job: Full stack web developer
+  job: Web developer Full stack
   avatar: /media/profile.png
-  aboutMe: Co-chair of the Bill & Melinda Gates Foundation. Founder of Breakthrough Energy. Co-founder of Microsoft. Voracious reader. Avid traveler. Active blogger.
+  aboutMe: >
+    Sono un web developer full stack con oltre 20 anni di esperienza.
+    <br>
+    Ho lavorato con diverse tecnologie e framework, ma attualmente mi concentro su PHP/Laravel e Javascript/Vue.js/Nuxt.
+    <br>
+    Sono appassionato di tecnologia e mi piace imparare nuove cose.
+    <br>
+    Sono sempre alla ricerca di nuove sfide e opportunità per crescere professionalmente.
+    <br>
+    Sono disponibile per lavorare da remoto.
+
   socialNetwork:
   # - name: Twitter
   #   url: https://twitter.com/billgates
@@ -19,52 +29,51 @@ cv:
 
 information:
   - icon: EnvelopeIcon
-    name: Mail address
-    value: billgates@microsoft.com
+    name: Indirizzo mail
+    value: me@robertorinaldi.dev
   - icon: CakeIcon
-    name: 66 Years old
-    value: 28 october 1955
-  - icon: DevicePhoneMobileIcon
-    name: Phone Number
-    value: '+1 (800) 642 7676'
+    name: Data di nascita
+    value: 9 novembre 1984
+  # - icon: DevicePhoneMobileIcon
+  #   name: Phone Number
+  #   value: '+1 (800) 642 7676'
   - icon: ComputerDesktopIcon
-    name: Work type
-    value: Remote or Fulltime
+    name: Sede di lavoro
+    value: Da remoto
+  - icon: ComputerDesktopIcon
+    name: Stack preferito
+    value: PHP/Laravel e Javascript/Vue.js/Nuxt
 
 skill:
-  - C#
-  - JavaScript
-  - Angular
-  - Vue
   - CSS
-  - Tailwindcss
-  - Dart
-  - PHP
-  - TypeScript
-  - Laravel
-  - Flutter
-  - AngularJS
-  - Bootstrap
-  - NodeJS
-  - HTML
-  - jQuery
-  - Microsoft SQL
-  - VS Code
-  - IIS
+  - Drupal
   - Git
+  - Google sheets
+  - HTML
+  - JavaScript
+  - jQuery
+  - Laravel
+  - Linux
+  - Livewire
+  - MySQL
+  - Nuxt
+  - PHP
+  - Tailwindcss
+  - TypeScript
+  - VS Code
+  - Vue.js
   - Windows
-  - Internet Explorer
-  - Insomnia
+  - Wordpress
 
 language:
+  - name: Italiano
+    code: it-IT
+    flag: media/lang/it.png
+    level: Madrelingua
   - name: English
-    code: pt-BR
-    flag: svg/united-states.svg
-    level: Native Language
-  - name: Portuguese
     code: en-US
-    flag: svg/brazil.svg
-    level: Intermediate
+    flag: media/lang/en.png
+    level: Buone capacità di comprensione della lingua parlata e scritta
 
 experience:
   - job: Bill & Melinda Gates Foundation

@@ -81,25 +81,15 @@ console.log(locale.value, resume.value)
         <!-- Start left side -->
         <div class="space-y-5">
           <ResumeProfileCard :data="resume.profile" />
-          <ResumeCvCard :data="resume?.cv" />
-        <!-- End resume -->
-        <!-- Start user information -->
-        <!-- <InfoCard /> -->
-        <!-- End user information -->
-        <!-- Start skills -->
-        <!-- <SkillCard /> -->
-        <!-- End skills -->
-        <!-- Start Language -->
-        <!-- <LanguageCard /> -->
+          <ResumeCvCard :data="resume.cv" />
+          <ResumeInfoCard :data="resume.information" />
+          <ResumeSkillCard :data="resume.skill" />
+          <ResumeLanguageCard :data="resume.language" />
         </div>
-        <!-- End left side -->
-        <!-- Start right side -->
         <div class="mt-4 space-y-5 sm:mt-0 lg:col-span-2">
-        <!-- Start about me -->
-        <!-- <AboutCard /> -->
-        <!-- End about me -->
+          <ResumeAboutCard :data="resume.profile.aboutMe" />
+          <ResumeExperienceCard :data="resume.experience" />
         </div>
-      <!-- End right side -->
       </div>
     </main>
   </div>

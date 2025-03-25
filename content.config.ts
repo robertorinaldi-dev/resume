@@ -1,33 +1,18 @@
 import type { ZodObject, ZodRawShape } from 'zod'
+import type { Certificate, Education, Experience, InfoItem, Language, Profile, Project } from '~/models'
 import { defineCollection, defineContentConfig, z } from '@nuxt/content'
 
 const resume: ZodObject<ZodRawShape> = z.object({
-  profile: z.object({
-    name: z.string(),
-    job: z.string(),
-    avatar: z.string(),
-    aboutMe: z.string(),
-    socialNetwork: z.array(
-      z.object({
-        name: z.string(),
-        url: z.string(),
-      }),
-    ),
-  }),
-  cv: z.object({
-    icon: z.string(),
-    name: z.string(),
-    value: z.string(),
-    url: z.string().optional(),
-  }),
-  // information: InfoItem[];
-  // skill: string[];
-  // language: Language[];
-  // experience: Experience[];
-  // volunteer: Experience[];
-  // education: Education[];
-  // certificate: Certificate[];
-  // project: Project[];
+  profile: z.custom<Profile>(),
+  cv: z.custom<InfoItem>(),
+  information: z.array(z.custom<InfoItem>()),
+  skill: z.array(z.string()),
+  language: z.array(z.custom<Language>()),
+  experience: z.array(z.custom<Experience>()),
+  volunteer: z.array(z.custom<Experience>()),
+  education: z.array(z.custom<Education>()),
+  certificate: z.array(z.custom<Certificate>()),
+  project: z.array(z.custom<Project>()),
 })
 
 // https://zod.dev/README?id=recursive-types

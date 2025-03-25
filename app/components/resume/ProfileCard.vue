@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { DataResumeCollectionItem } from '@nuxt/content'
+import type { Profile } from '~/models'
 
 defineProps({
   data: {
-    type: Object as PropType<DataResumeCollectionItem['profile']>,
+    type: Object as PropType<Profile>,
     required: true,
   },
 })
