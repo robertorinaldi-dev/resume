@@ -5,7 +5,7 @@ const runtimeConfig = useRuntimeConfig()
 
 useHead({
   title: '',
-  titleTemplate: ((title) => `${title} - ${site.name}`),
+  titleTemplate: title => `${title} - ${site.name}`,
   meta: [
     {
       name: 'description',
@@ -66,22 +66,42 @@ useHead({
   ],
 })
 
-// const route = useRoute()
-// const isHome = ref(/index[_]{3}/.test(route.name))
-// watch(
-//   () => route,
-//   () => (isHome.value = /index[_]{3}/.test(route.name)),
-//   { deep: true },
-// )
+const { locale } = useI18n()
+
+const { data: resume } = await useAsyncData(`data_resume___${locale.value}`, () =>
+  queryCollection('data_resume').first())
+
+console.log(locale.value, resume.value)
 </script>
 
 <template>
-  <div class="w-full bg-white bg-cover font-sans text-black">
-    <div class="mx-auto w-full max-w-screen-2xl">
-      <Header class="relative isolate z-10 px-4 md:px-8" />
-      <NuxtPage class="my-8 px-8 xl:px-12" />
-    </div>
-    <Footer />
+  <div class="bg-gray-100 dark:bg-night-900 min-h-screen">
+    <main class="container mx-auto max-w-6xl px-4 py-4">
+      <div v-if="resume" class="gap-5 sm:grid lg:grid-cols-3">
+        <!-- Start left side -->
+        <div class="space-y-5">
+          <ResumeProfileCard :data="resume.profile" />
+          <ResumeCvCard :data="resume?.cv" />
+        <!-- End resume -->
+        <!-- Start user information -->
+        <!-- <InfoCard /> -->
+        <!-- End user information -->
+        <!-- Start skills -->
+        <!-- <SkillCard /> -->
+        <!-- End skills -->
+        <!-- Start Language -->
+        <!-- <LanguageCard /> -->
+        </div>
+        <!-- End left side -->
+        <!-- Start right side -->
+        <div class="mt-4 space-y-5 sm:mt-0 lg:col-span-2">
+        <!-- Start about me -->
+        <!-- <AboutCard /> -->
+        <!-- End about me -->
+        </div>
+      <!-- End right side -->
+      </div>
+    </main>
   </div>
 </template>
 

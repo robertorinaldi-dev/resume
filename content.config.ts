@@ -1,6 +1,34 @@
 import type { ZodObject, ZodRawShape } from 'zod'
-import { z as z$2 } from 'zod'
-import { type Collection, defineCollection, defineContentConfig, z } from '@nuxt/content'
+import { defineCollection, defineContentConfig, z } from '@nuxt/content'
+
+const resume: ZodObject<ZodRawShape> = z.object({
+  profile: z.object({
+    name: z.string(),
+    job: z.string(),
+    avatar: z.string(),
+    aboutMe: z.string(),
+    socialNetwork: z.array(
+      z.object({
+        name: z.string(),
+        url: z.string(),
+      }),
+    ),
+  }),
+  cv: z.object({
+    icon: z.string(),
+    name: z.string(),
+    value: z.string(),
+    url: z.string().optional(),
+  }),
+  // information: InfoItem[];
+  // skill: string[];
+  // language: Language[];
+  // experience: Experience[];
+  // volunteer: Experience[];
+  // education: Education[];
+  // certificate: Certificate[];
+  // project: Project[];
+})
 
 // https://zod.dev/README?id=recursive-types
 const schema: ZodObject<ZodRawShape> = z.object({
@@ -44,6 +72,14 @@ const schema: ZodObject<ZodRawShape> = z.object({
 
 export default defineContentConfig({
   collections: {
+    data_resume: defineCollection({
+      type: 'data',
+      source: {
+        include: '_data/resume/*.yml',
+        prefix: '/',
+      },
+      schema: resume,
+    }),
     content_it: defineCollection({
       type: 'page',
       source: {

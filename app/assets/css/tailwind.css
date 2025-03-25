@@ -2,7 +2,8 @@
 
 @plugin "@tailwindcss/typography";
 
-@custom-variant dark (&:where(.dark, .dark :not(:where([class~=not-dark],[class~=not-dark] *))));
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant negative (&:where(.negative, .negative :not(:where([class~=not-negative],[class~=not-negative] *))));
 @custom-variant data-active (&[data-active="true"]);
 
 @theme {
@@ -17,7 +18,19 @@
   --font-body: 'Open Sans', 'sans-serif';
   --font-headings: 'Open Sans', 'serif';
 
-  --color-primary: #307fe2;
+  --color-primary: oklch(70.14% 0.164 243.9);
+  --color-dark-50: oklch(93.24% 0.007 286.27);
+  --color-dark-100: oklch(87.29% 0.014 286.11);
+  --color-dark-200: oklch(73.84% 0.03 285.64);
+  --color-dark-300: oklch(60.09% 0.047 284.9);
+  --color-dark-400: oklch(47.15% 0.045 284.54);
+  --color-dark-500: oklch(34.01% 0.03 284.72);
+  --color-dark-600: oklch(29.92% 0.025 284.78);
+  --color-dark-700: oklch(25.22% 0.019 284.98);
+  --color-dark-800: oklch(20.35% 0.014 285.1);
+  --color-dark-900: oklch(15.1% 0.006 285.61);
+  --color-dark-950: oklch(10.83% 0.007 285.17);
+
   --color-light-background: #ffffff;
   --color-light-foreground: #333333;
   --color-dark-background: #1a2e51;
@@ -58,7 +71,7 @@
   }
 
   a {
-    @apply focus-visible:outline-primary hover:underline hover:underline-offset-2 focus:outline-hidden focus-visible:outline-2 focus-visible:outline-offset-2;
+    @apply focus-visible:outline-primary focus:outline-hidden focus-visible:outline-2 focus-visible:outline-offset-2;
   }
 
   p {
@@ -67,6 +80,10 @@
 
   p,
   span {
+    a,
+    .link {
+      @apply hover:underline hover:underline-offset-2;
+    }
     &.small {
       @apply text-sm font-light;
       &.strong {
