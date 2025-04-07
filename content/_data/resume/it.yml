@@ -1,17 +1,15 @@
 profile:
   name: Roberto Rinaldi
   job: Web developer Full stack
-  avatar: /media/profile.png
+  avatar: /media/resume/profile.png
   aboutMe: >
     Sono un web developer full stack con oltre 20 anni di esperienza.
     <br>
-    Ho lavorato con diverse tecnologie e framework, ma attualmente mi concentro su PHP/Laravel e Javascript/Vue.js/Nuxt.
+    Ho lavorato con diverse tecnologie e framework, ma attualmente mi concentro su PHP/Laravel e Javascript/Nuxt.
     <br>
-    Sono appassionato di tecnologia e mi piace imparare nuove cose.
+    Mi contraddistinguono la passione per la tecnologia, la continua ricerca di innovazione e il desiderio di crescita professionale.
     <br>
-    Sono sempre alla ricerca di nuove sfide e opportunità per crescere professionalmente.
-    <br>
-    Sono disponibile per lavorare da remoto.
+    Attualmente lavoro da remoto, sempre pronto per nuove sfide stimolanti.
 
   socialNetwork:
   # - name: Twitter
@@ -40,9 +38,12 @@ information:
   - icon: ComputerDesktopIcon
     name: Sede di lavoro
     value: Da remoto
-  - icon: ComputerDesktopIcon
+  - icon: HeartIcon
     name: Stack preferito
-    value: PHP/Laravel e Javascript/Vue.js/Nuxt
+    value: PHP/Laravel e Javascript/Nuxt
+  - icon: CurrencyEuroIcon
+    name: Tariffa
+    value: 30 € / ora
 
 skill:
   - CSS
@@ -56,13 +57,13 @@ skill:
   - Linux
   - Livewire
   - MySQL
+  - Nitro
   - Nuxt
   - PHP
   - Tailwindcss
   - TypeScript
   - VS Code
   - Vue.js
-  - Windows
   - Wordpress
 
 language:
@@ -76,110 +77,103 @@ language:
     level: Buone capacità di comprensione della lingua parlata e scritta
 
 experience:
-  - job: Bill & Melinda Gates Foundation
-    company: Co-chair
-    companyLogo: img/company/co-chair.jpg
-    location: New York
-    workType: Fulltime
-    start: jan 2000
-    end: Current
-    description: Guided by the belief that every life has equal value, the Bill & Melinda Gates Foundation works to help all people lead healthy, productive lives. In developing countries, it focuses on improving people's health and giving them the chance to lift themselves out of hunger and extreme poverty. In the United States, it seeks to ensure that all people—especially those with the fewest resources—have access to the opportunities they need to succeed in school and life. Based in Seattle, Washington, the foundation is led by CEO Mark Suzman, under the direction of co-chairs Bill Gates and Melinda French Gates and the board of trustees.
-  - job: Breakthrough Energy
-    company: Founder
-    companyLogo: img/company/founder.jpg
-    location: New York
-    workType: Fulltime
-    start: jan 2015
-    end: Current
-    description: Breakthrough Energy is dedicated to helping humanity avoid a climate disaster. Through investment vehicles, philanthropic programs, policy advocacy, and other activities, we're committed to scaling the technologies we need to reach net-zero emissions by 2050.
+  - job: Web developer Full stack
+    company: MGquadro Srl
+    companyLogo: media/resume/experience/mgquadro.png
+    location: Roma
+    workType: Ibrido
+    start: 2017
+    end: presente
+    description: >
+      MGquadro, fondata nel 2005, è una web e digital agency con sede a Roma. <br>
+      Tra le sue collaborazioni figurano organizzazioni e marchi di rilievo nazionale e internazionale come il Dipartimento per lo Sport della Presidenza del Consiglio, Berlitz, Federazione Italiana Tennis Padel, ATP Finals e molti altri.
+    workList:
+      - Sviluppo siti web Nuxt
+      - Sviluppo animazioni in GSAP e D3.js
+      - Sviluppo CMS headless ed applicazioni gestionali con Laravel/Filament
+      - Sviluppo soluzioni web enterprise con Laravel e Vue.js
+      - Gestione server Linux
+      - Sviluppo API RESTful
+      - Sviluppo e manutenzione siti Wordpress e Drupal
+      - Manutenzione e miglioramento del sistema di gestione delle prenotazioni per la Federazione Italiana Tennis e Padel
+      - Creazione template HTML e sviluppo di integrazioni Javascript/Jquery e API Nitro per il sistema webshop di TicketOne
+  - job: Web developer PHP e Webmaster
+    company: Associazione Donatrici Italiane Sangue Cordone Ombelicale
+    companyLogo: media/resume/experience/adisco.jpg
+    location: Italia
+    workType: da remoto
+    start: 2015
+    end: presente
+    description: >
+      ADISCO, Associazione Donatrici Italiane Sangue Cordone Ombelicale, è una ONLUS che promuove la donazione di sangue di cordone ombelicale (SCO) in Italia.
+    workList:
+      - Assistenza sito web HTML e PHP
+      - Gestione mail su server Linux
+  - job: Web developer Wordpress e Webmaster
+    company: Bhb World Srl (Badura)
+    companyLogo: media/resume/experience/badura.png
+    location: Italia
+    workType: da remoto
+    start: 2015
+    end: 2023
+    description: >
+      Bhb World Srl è un'azienda che si occupa della produzione e commercializzazione di articoli in pelle, pelletteria e accessori moda.
+    workList:
+      - Assistenza sito web Wordpress e shop Wordpress/Woocommerce
+      - Sviluppo nuove funzionalità e manutenzione siti web in Wordpress
+      - Gestione mail su server Linux
+  - job: Fondatore, tecnico informatico e developer Full stack
+    company: Kke Informatica
+    companyLogo: media/resume/experience/kke.png
+    location: Roma
+    workType: in sede
+    start: 2005
+    end: 2017
+    description: >
+      Vendita e assistenza computer, notebook, server, reti e software. <br>
+      Assistenza tecnica specializzata e consulenza informatica. <br>
+      Sviluppo software e siti web.
+    workList:
+      - Sviluppo siti web personalizzati con PHP, HTML e Javascript/jQuery
+      - Sviluppo CMS ed applicazioni gestionali in PHP
+      - Sviluppo e gestione siti Wordpress/Woocommerce
+      - Sviluppo applicazioni enterprise in Java
+      - Amministrazione server Linux
+      - Progettazione e configurazione reti LAN
+      - Consulenza IT e assistenza tecnica hardware/software
+      - Assemblaggio e riparazione PC e notebook
+      - Vendita hardware e software
+  - job: Webmaster
+    company: Liceo scientifico statale Bruno Touschek
+    companyLogo: media/resume/experience/touschek.png
+    location: Grottaferrata
+    workType: ibrido
+    start: 2003
+    end: 2005
+    description:
+    workList:
+      - Sviluppo e manutenzione sito web in Flash
+      - Corsi di informatica extrascolastici per studenti del liceo
 
 education:
-  - college: Harvard University
-    collegeLogo: img/college/harvard.jpg
-    course: Mathematics, law and computer science
-    start: '1973'
-    end: '1975'
-    url: https://www.xpeducacao.com.br/pos-graduacao/desenvolvimento-front-end?evento=dev_summit
-  - college: Lakeside School
-    collegeLogo: img/college/lakeside.jpg
-    course: Technologist in Computer Networks, Network Management and Systems Security
-    start: '1963'
-    end: '1973'
+  # - college: Università degli Studi di Roma "Tor Vergata"
+  #   collegeLogo: media/resume/experience/touschek.png
+  #   course: Matematica
+  #   degree: Esami conseguiti 3
+  #   start: 2007
+  #   end: 2010
+  #   url:
+  - college: Università degli Studi di Roma "Tor Vergata"
+    collegeLogo: media/resume/experience/tor-vergata.png
+    course: Ingegneria informatica
+    degree: Esami conseguiti 29 (media 29/30)
+    start: 2003
+    end: 2006
+    url:
+  - college: Liceo scientifico statale Bruno Touschek
+    collegeLogo: media/resume/experience/touschek.png
+    course: Indirizzo informatico
+    degree: Diploma di maturità scientifica
+    start: 1998
+    end: 2003
     url: ''
-
-volunteer:
-  - job: Team Coordinator
-    company: Green Peace
-    companyLogo: img/company/green-peace.jpg
-    location: New York
-    workType: Remote
-    start: January 2000
-    end: Current
-    description: Greenpeace is an independent global campaigning network that acts to change attitudes and behaviour, to protect and conserve the environment and to promote peace. It comprises 26 independent national/regional Greenpeace organisations with presence in over 55 countries across Europe, Africa, the Americas, Asia and the Pacific, as well as a coordinating and supporting organisation, Greenpeace International.
-
-certificate:
-  - course: Microsoft Azure Data Engineering Associate (DP-203)
-    school: Coursera
-    schoolLogo: img/college/coursera.jpg
-    issueDate: jan de 2000
-    expirationDate: No expiration date
-    credentialCode: UC-99025927-6d24-4571-8110-44e310049ca1
-    url: https://www.coursera.org/professional-certificates/microsoft-azure-dp-203-data-engineering
-  - course: Microsoft 365 Fundamentals
-    school: Coursera
-    schoolLogo: img/college/coursera.jpg
-    issueDate: jan de 2001
-    expirationDate: No expiration date
-    credentialCode: UC-99025927-6d24-4571-8110-44e310049ca1
-    url: https://www.coursera.org/specializations/microsoft-365-fundamentals
-  - course: Microsoft Azure Fundamentals AZ-900 Exam Prep
-    school: Coursera
-    schoolLogo: img/college/coursera.jpg
-    issueDate: jan de 2002
-    expirationDate: No expiration date
-    credentialCode: UC-99025927-6d24-4571-8110-44e310049ca1
-    url: https://www.coursera.org/specializations/microsoft-azure-fundamentals-az-900
-  - course: Microsoft Azure Data Scientist Associate (DP-100)
-    school: Coursera
-    schoolLogo: img/college/coursera.jpg
-    issueDate: jan de 2003
-    expirationDate: No expiration date
-    credentialCode: UC-99025927-6d24-4571-8110-44e310049ca1
-    url: https://www.coursera.org/professional-certificates/azure-data-scientist
-  - course: Microsoft Azure AI Fundamentals AI-900 Exam Prep
-    school: Coursera
-    schoolLogo: img/college/coursera.jpg
-    issueDate: jan de 2004
-    expirationDate: No expiration date
-    credentialCode: UC-99025927-6d24-4571-8110-44e310049ca1
-    url: https://www.coursera.org/specializations/microsoft-azure-ai-900-ai-fundamentals
-  - course: Microsoft Azure Developer Associate (AZ-204)
-    school: Coursera
-    schoolLogo: img/college/coursera.jpg
-    issueDate: jan de 2005
-    expirationDate: No expiration date
-    credentialCode: UC-99025927-6d24-4571-8110-44e310049ca1
-    url: https://www.coursera.org/professional-certificates/azure-developer-associate
-  - course: Work Smarter with Microsoft Excel
-    school: Coursera
-    schoolLogo: img/college/coursera.jpg
-    issueDate: jan de 2006
-    expirationDate: No expiration date
-    credentialCode: UC-99025927-6d24-4571-8110-44e310049ca1
-    url: https://www.coursera.org/learn/microsoft-excel-work-smarter
-
-project:
-  - name: Visual Studio Code
-    description: Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.
-    language: Typescript
-    image: img/project/vscode.png
-    stars: '+138k'
-    forks: 23.8k
-    url: https://github.com/microsoft/vscode
-  - name: TypeScript
-    description: TypeScript is a language for application-scale JavaScript. TypeScript adds optional types to JavaScript that support tools for large-scale JavaScript applications for any browser, for any host, on any OS. TypeScript compiles to readable, standards-based JavaScript.
-    language: Typescript
-    image: img/project/typescript.png
-    stars: '+85.3k'
-    forks: 11.1k
-    url: https://github.com/microsoft/TypeScript

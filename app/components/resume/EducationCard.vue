@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { Experience } from '~/models'
+import type { Education } from '~/models'
 
 const props = defineProps({
   data: {
-    type: Array as PropType<Experience[]>,
+    type: Array as PropType<Education[]>,
     required: true,
   },
 })
@@ -15,11 +15,11 @@ const total = computed(() => {
 
 <template>
   <ResumeCard>
-    <h2 class="mb-4 text-lg font-semibold dark:text-dark-50">
-      Esperienze lavorative
+    <h2 class="mb-5 text-lg font-semibold dark:text-dark-50">
+      Formazione
     </h2>
-    
-    <ResumeExperienceCardItem
+
+    <ResumeEducationCardItem
       v-for="(item, index) in data"
       :key="index"
       :data="item"

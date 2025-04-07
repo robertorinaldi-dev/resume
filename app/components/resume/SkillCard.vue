@@ -11,14 +11,14 @@ defineProps({
 
 <template>
   <ResumeCard>
-    <h2 class="mb-4 text-lg font-semibold dark:text-night-50">
+    <h2 class="mb-4 text-lg font-semibold text-light-foreground dark:text-dark-foreground">
       Competenze
     </h2>
-    <div class="-m-2 flex flex-wrap">
+    <div class="gap-2 flex flex-wrap">
       <span
         v-for="(value, index) in data"
         :key="index"
-        class="inline-flex rounded-lg px-2 py-1 text-xs font-medium m-1 cursor-pointer bg-emerald-500/20 text-emerald-500 hover:bg-emerald-500 hover:text-white"
+        class="inline-flex rounded-lg px-2 py-1 text-xs font-medium bg-primary/10 text-primary"
       >
         {{ value }}
       </span>

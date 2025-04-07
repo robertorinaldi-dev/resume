@@ -11,32 +11,19 @@ defineProps({
 
 <template>
   <ResumeCard>
-    <div class="flex items-start justify-between">
-      <div class="flex items-start gap-3">
-        <img :src="data.avatar" alt="Avatar" class="size-16 rounded-full">
-        <div>
-          <div class="dark:text-dark-50 text-lg font-bold text-gray-900">
+    <div class="flex items-start gap-3 size-full">
+      <img :src="data.avatar" alt="Avatar" class="size-14 rounded-full">
+      <div class="flex flex-wrap h-full items-center flex-1">
+        <div class="flex justify-start flex-col">
+          <div class="dark:text-dark-foreground text-lg font-bold text-light-foreground">
             {{ data.name }}
           </div>
-          <div class="dark:text-dark-200 text-xs text-gray-400">
+          <div class="dark:text-dark-secondary-foreground text-xs text-light-secondary-foreground">
             {{ data.job }}
           </div>
-          <div class="mt-2 inline-flex flex-wrap gap-1">
-            <a
-              v-for="(social, index) of data.socialNetwork"
-              :key="index"
-              :href="social.url"
-              target="_blank"
-              class="cursor-pointer rounded-lg border border-gray-100 px-2 py-0.5 text-xs font-medium text-gray-400 hover:bg-primary-500/20 hover:text-primary-500 dark:border-dark-600 dark:hover:bg-primary-500/20"
-            >
-              {{ social.name }}
-            </a>
-          </div>
         </div>
+        <ColorModePicker class="lg:mt-2 flex max-lg:flex-1 justify-end items-center lg:justify-start" />
       </div>
-      <!-- More Options  -->
-      <!-- <SettingsPopover /> -->
-      <!-- End status badge -->
     </div>
   </ResumeCard>
 </template>

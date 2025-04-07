@@ -78,12 +78,13 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    '@nuxtjs/sitemap',
+    '@nuxtjs/sitemap', // https://sitemap.nuxtjs.org/
     '@nuxt/content', // https://content.nuxtjs.org/
-    '@nuxt/image',
-    '@nuxt/scripts',
+    '@nuxt/image', // https://image.nuxtjs.org/
+    '@nuxt/scripts', // https://nuxt.com/modules/scripts
     '@nuxtjs/google-fonts', // https://google-fonts.nuxtjs.org/
     '@nuxtjs/i18n', // https://v8.i18n.nuxtjs.org/
+    '@nuxtjs/color-mode', // https://color-mode.nuxtjs.org/
   ],
 
   content: {
@@ -187,4 +188,13 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2025-03-24',
+
+  routeRules: {
+    '/': {
+      redirect: {
+        to: '/experience',
+        statusCode: 301,
+      },
+    },
+  },
 })

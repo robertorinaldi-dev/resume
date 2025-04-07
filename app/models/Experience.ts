@@ -7,4 +7,5 @@ export interface Experience {
   start: string;
   end?: string;
   description: string;
+  workList: string[];
 }

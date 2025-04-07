@@ -65,33 +65,13 @@ useHead({
     },
   ],
 })
-
-const { locale } = useI18n()
-
-const { data: resume } = await useAsyncData(`data_resume___${locale.value}`, () =>
-  queryCollection('data_resume').first())
-
-console.log(locale.value, resume.value)
 </script>
 
 <template>
-  <div class="bg-gray-100 dark:bg-night-900 min-h-screen">
-    <main class="container mx-auto max-w-6xl px-4 py-4">
-      <div v-if="resume" class="gap-5 sm:grid lg:grid-cols-3">
-        <!-- Start left side -->
-        <div class="space-y-5">
-          <ResumeProfileCard :data="resume.profile" />
-          <ResumeCvCard :data="resume.cv" />
-          <ResumeInfoCard :data="resume.information" />
-          <ResumeSkillCard :data="resume.skill" />
-          <ResumeLanguageCard :data="resume.language" />
-        </div>
-        <div class="mt-4 space-y-5 sm:mt-0 lg:col-span-2">
-          <ResumeAboutCard :data="resume.profile.aboutMe" />
-          <ResumeExperienceCard :data="resume.experience" />
-        </div>
-      </div>
-    </main>
+  <div class="min-h-screen bg-light-secondary-background dark:bg-dark-secondary-background sepia:sepia-50">
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
 
