@@ -14,10 +14,10 @@ defineProps({
     <div class="flex gap-3">
       <MediaHeroIcon :icon="data.icon" />
       <div class="font-medium">
-        <div class="text-sm text-light-foreground dark:text-dark-foreground">
+        <div class="text-sm text-secondary-foreground">
           {{ data.value }}
         </div>
-        <div class="text-xs text-light-tertiary-foreground dark:text-dark-tertiary-foreground">
+        <div class="text-xs text-tertiary-foreground">
           {{ data.name }}
         </div>
       </div>

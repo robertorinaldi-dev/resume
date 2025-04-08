@@ -9,7 +9,8 @@ function iconName(theme: string) {
   return 'BookOpenIcon'
 }
 
-const colorMode = useColorMode()
+// const colorMode = useColorMode()
+
 </script>
 
 <template>
@@ -23,15 +24,10 @@ const colorMode = useColorMode()
         <MediaHeroIcon
           :icon="iconName(theme)"
           is-link
-          :class="{
-            'bg-primary/20': !$colorMode.unknown && theme === $colorMode.preference,
-          }"
+          :is-selected="!$colorMode.unknown && theme === $colorMode.preference"
           @click="$colorMode.preference = theme"
         />
       </li>
     </ul>
   </div>
 </template>
-
-<style scoped>
-</style>

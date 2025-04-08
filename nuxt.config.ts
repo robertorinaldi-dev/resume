@@ -81,7 +81,7 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap', // https://sitemap.nuxtjs.org/
     '@nuxt/content', // https://content.nuxtjs.org/
     '@nuxt/image', // https://image.nuxtjs.org/
-    '@nuxt/scripts', // https://nuxt.com/modules/scripts
+    // '@nuxt/scripts', // https://nuxt.com/modules/scripts
     '@nuxtjs/google-fonts', // https://google-fonts.nuxtjs.org/
     '@nuxtjs/i18n', // https://v8.i18n.nuxtjs.org/
     '@nuxtjs/color-mode', // https://color-mode.nuxtjs.org/
@@ -104,17 +104,17 @@ export default defineNuxtConfig({
     },
   },
 
-  scripts: {
-    registry: {
-      // googleTagManager: true,
-    },
-  },
+  // scripts: {
+  //   registry: {
+  //     googleTagManager: true,
+  //   },
+  // },
 
   googleFonts: {
     display: 'block',
     download: false,
     families: {
-      'Open+Sans': [100, 200, 300, 400, 500, 600, 700, 800, 900],
+      'Open+Sans': [400, 500, 600, 700],
     },
   },
 
@@ -130,12 +130,12 @@ export default defineNuxtConfig({
         language: 'it-IT',
         file: 'it-IT.json',
       },
-      {
-        code: 'en',
-        name: 'English',
-        language: 'en-GB',
-        file: 'en-GB.json',
-      },
+      // {
+      //   code: 'en',
+      //   name: 'English',
+      //   language: 'en-GB',
+      //   file: 'en-GB.json',
+      // },
     ],
     defaultLocale: 'it',
     strategy: 'prefix_and_default',

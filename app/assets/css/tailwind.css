@@ -19,44 +19,52 @@
   --font-body: 'Open Sans', 'sans-serif';
   --font-headings: 'Open Sans', 'serif';
 
-  --color-primary: #158876;
+  --color-primary-light: oklch(0.953 0.051 180.801);
+  --color-primary: oklch(0.704 0.14 182.503);
+  --color-primary-dark: oklch(0.386 0.063 188.416);
 
-  --color-light-background: var(--color-white);
-  --color-light-secondary-background: var(--color-gray-50);
-  --color-light-foreground: var(--color-gray-950);
-  --color-light-secondary-foreground: var(--color-gray-600);
-  --color-light-tertiary-foreground: var(--color-gray-400);
+  --color-background: var(--color-white);
+  --color-secondary-background: var(--color-gray-50);
+  --color-tertiary-background: var(--color-gray-100);
+  --color-foreground: var(--color-gray-950);
+  --color-secondary-foreground: var(--color-gray-600);
+  --color-tertiary-foreground: var(--color-gray-400);
 
-  --color-dark-background: var(--color-gray-800);
-  --color-dark-secondary-background: var(--color-gray-900);
-  --color-dark-foreground: var(--color-white);
-  --color-dark-secondary-foreground: var(--color-gray-400);
+  --color-hover: var(--color-gray-500);
 }
 
 @layer base {
-  /* .dark-mode {
-    --color: #ebf4f1;
-    --color-primary: #41b38a;
-    --color-secondary: #fdf9f3;
-    --bg: #091a28;
-    --bg-secondary: #071521;
-    --border-color: #0d2538;
+  .dark-mode {
+    --color-background: var(--color-gray-800);
+    --color-secondary-background: var(--color-gray-900);
+    --color-tertiary-background: var(--color-gray-700);
+    --color-foreground: var(--color-gray-100);
+    --color-secondary-foreground: var(--color-gray-300);
+    --color-tertiary-foreground: var(--color-gray-500);
   }
 
   .sepia-mode {
-    --color: #433422;
-    --color-secondary: #504231;
-    --bg: #f1e7d0;
-    --bg-secondary: #eae0c9;
-    --border-color: #ded0bf;
-  } */
+    /* https://www.tints.dev/primary/F5DEB3 */
+    --color-primary-light: oklch(92.51% 0.052 83.4);
+    --color-primary: oklch(40.18% 0.077 77.58);
+    --color-primary-dark: oklch(25.07% 0.044 79.09);
+
+    --color-background: oklch(99.4% 0.004 91.45);
+    --color-secondary-background: oklch(98.3% 0.011 84.58);
+    --color-tertiary-background: oklch(96.63% 0.022 83.26);
+    --color-foreground: oklch(25.07% 0.044 79.09);
+    --color-secondary-foreground: oklch(40.18% 0.077 77.58);
+    --color-tertiary-foreground: oklch(65.44% 0.13 76.51);
+
+    --color-hover: var(--color-primary);
+  }
 
   html {
-    @apply w-full min-w-[320px] overflow-auto;
+    @apply w-full min-w-[400px] overflow-auto;
   }
 
   body {
-    @apply font-body text-light-foreground dark:text-dark-foreground text-base leading-loose font-normal tracking-normal;
+    @apply font-body text-foreground text-base leading-loose font-normal tracking-normal;
   }
 
   h1,
@@ -66,7 +74,7 @@
   }
 
   h1 {
-    @apply font-headings text-light-foreground dark:text-dark-foreground mb-4 text-3xl leading-normal font-normal tracking-normal;
+    @apply font-headings text-foreground mb-4 text-3xl leading-normal font-normal tracking-normal;
     &.small {
       @apply text-2xl;
     }
@@ -116,7 +124,7 @@
 
   button,
   .btn {
-    @apply bg-primary text-dark-foreground hover:bg-primary/90 focus-visible:outline-primary inline-flex cursor-pointer justify-center rounded-md px-3 py-2 text-sm font-semibold shadow-xs focus:outline-hidden focus-visible:outline-2 focus-visible:outline-offset-2;
+    @apply bg-primary text-foreground hover:bg-primary/90 focus-visible:outline-primary inline-flex cursor-pointer justify-center rounded-md px-3 py-2 text-sm font-semibold shadow-xs focus:outline-hidden focus-visible:outline-2 focus-visible:outline-offset-2;
   }
 }
 

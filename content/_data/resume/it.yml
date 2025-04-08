@@ -97,7 +97,7 @@ experience:
       - Sviluppo e manutenzione siti Wordpress e Drupal
       - Manutenzione e miglioramento del sistema di gestione delle prenotazioni per la Federazione Italiana Tennis e Padel
       - Creazione template HTML e sviluppo di integrazioni Javascript/Jquery e API Nitro per il sistema webshop di TicketOne
-  - job: Web developer PHP e Webmaster
+  - job: PHP developer e System Administrator
     company: Associazione Donatrici Italiane Sangue Cordone Ombelicale
     companyLogo: media/resume/experience/adisco.jpg
     location: Italia
@@ -109,7 +109,7 @@ experience:
     workList:
       - Assistenza sito web HTML e PHP
       - Gestione mail su server Linux
-  - job: Web developer Wordpress e Webmaster
+  - job: Wordpress Developer e System Administrator
     company: Bhb World Srl (Badura)
     companyLogo: media/resume/experience/badura.png
     location: Italia
@@ -121,6 +121,30 @@ experience:
     workList:
       - Assistenza sito web Wordpress e shop Wordpress/Woocommerce
       - Sviluppo nuove funzionalità e manutenzione siti web in Wordpress
+      - Gestione mail su server Linux
+  - job: Java Developer e tecnico informatico
+    company: Associazione Italiana Ambulanti Rotativi Commercianti
+    companyLogo: 
+    location: Roma
+    workType: ibrido
+    start: 2012
+    end: 2019
+    description: >
+      A.I.A.R.C. è un'associazione di categoria che rappresenta gli ambulanti rotativi commercianti.
+    workList:
+      - Sviluppo e manutenzione software di gestione per il settore degli ambulanti in Java
+      - Assistenza informatica
+  - job: Web developer Full stack e System Administrator
+    company: Copem Group
+    companyLogo: media/resume/experience/copem.png
+    location: Roma
+    workType: da remoto
+    start: 2011
+    end: 2017
+    description: >
+      Copem Group è un'azienda leader nel Diamond Business con sede ad Anversa, capitale mondiale dei diamanti.
+    workList:
+      - Sviluppo e manutenzione software di gestione per il settore dei diamanti in PHP e Javascript
       - Gestione mail su server Linux
   - job: Fondatore, tecnico informatico e developer Full stack
     company: Kke Informatica
@@ -173,7 +197,7 @@ education:
   - college: Liceo scientifico statale Bruno Touschek
     collegeLogo: media/resume/experience/touschek.png
     course: Indirizzo informatico
-    degree: Diploma di maturità scientifica
+    degree: Diploma con lode
     start: 1998
     end: 2003
     url: ''

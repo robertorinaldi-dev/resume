@@ -11,7 +11,7 @@ defineProps({
 
 <template>
   <ResumeCard>
-    <h2 class="mb-4 text-lg font-semibold dark:text-dark-foreground text-light-foreground">
+    <h2 class="mb-4 text-lg font-semibold text-foreground">
       Dati personali
     </h2>
     <div class="space-y-4">

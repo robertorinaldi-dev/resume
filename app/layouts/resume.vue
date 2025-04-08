@@ -10,7 +10,7 @@ const { data: resume } = await useAsyncData(`data_resume___${locale.value}`, () 
     <div v-if="resume" class="grid gap-4 lg:grid-cols-3 items-start">
       <div class="grid gap-4">
         <ResumeProfileCard :data="resume.profile" maxi-rounded="topLeft" />
-        <ResumeCvCard :data="resume.cv" />
+        <!-- <ResumeCvCard :data="resume.cv" /> -->
         <ResumeInfoCard :data="resume.information" />
         <ResumeSkillCard :data="resume.skill" />
         <ResumeLanguageCard :data="resume.language" />

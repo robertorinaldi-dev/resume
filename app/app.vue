@@ -68,7 +68,7 @@ useHead({
 </script>
 
 <template>
-  <div class="min-h-screen bg-light-secondary-background dark:bg-dark-secondary-background sepia:sepia-50">
+  <div class="min-h-screen bg-secondary-background">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>

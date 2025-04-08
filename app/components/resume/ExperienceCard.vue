@@ -15,7 +15,7 @@ const total = computed(() => {
 
 <template>
   <ResumeCard>
-    <h2 class="mb-4 text-lg font-semibold dark:text-dark-50">
+    <h2 class="mb-4 text-lg font-semibold" id="experience">
       Esperienze lavorative
     </h2>
     

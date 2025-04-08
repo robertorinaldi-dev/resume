@@ -11,18 +11,18 @@ defineProps({
 
 <template>
   <ResumeCard>
-    <div class="flex items-start gap-3 size-full">
-      <img :src="data.avatar" alt="Avatar" class="size-14 rounded-full">
-      <div class="flex flex-wrap h-full items-center flex-1">
-        <div class="flex justify-start flex-col">
-          <div class="dark:text-dark-foreground text-lg font-bold text-light-foreground">
+    <div class="flex size-full items-start gap-3 @container">
+      <img :src="data.avatar" alt="Avatar" class="size-14 rounded-full sepia:sepia-50" />
+      <div class="flex h-full flex-wrap flex-1 items-center justify-between gap-3">
+        <div class="flex flex-col justify-start">
+          <div class="text-foreground text-lg font-bold">
             {{ data.name }}
           </div>
-          <div class="dark:text-dark-secondary-foreground text-xs text-light-secondary-foreground">
+          <div class="text-secondary-foreground text-xs">
             {{ data.job }}
           </div>
         </div>
-        <ColorModePicker class="lg:mt-2 flex max-lg:flex-1 justify-end items-center lg:justify-start" />
+        <ColorModePicker />
       </div>
     </div>
   </ResumeCard>
