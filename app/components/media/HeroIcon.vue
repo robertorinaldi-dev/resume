@@ -22,7 +22,7 @@ const icon = computed(() => {
     :class="{
       'bg-tertiary-background text-secondary-foreground group-aria-[current=page]:bg-primary-light group-aria-[current=page]:dark:bg-primary-dark group-aria-[current=page]:text-primary-dark group-aria-[current=page]:dark:text-primary-light':
         !isSelected,
-      'hover:text-background cursor-pointer border transition duration-100 hover:border-hover hover:bg-hover':
+      'hover:text-background hover:dark:text-background cursor-pointer border transition duration-100 hover:border-hover hover:bg-hover hover:dark:bg-hover':
         isLink,
       'bg-primary-light dark:bg-primary-dark text-primary-dark dark:text-primary-light': isSelected,
     }"
