@@ -69,30 +69,6 @@ useHead({
 
 <template>
   <div class="min-h-screen bg-secondary-background">
-    <NuxtLayout>
       <NuxtPage />
-    </NuxtLayout>
   </div>
 </template>
-
-<style>
-@reference "assets/css/tailwind.css";
-
-html {
-  font-size: 16px;
-}
-
-.blur-enter-active,
-.blur-leave-active {
-  @apply min-h-screen transition-all duration-500;
-}
-
-.blur-leave-active {
-  @apply absolute inset-0 w-full;
-}
-
-.blur-enter-from,
-.blur-leave-to {
-  @apply opacity-0 blur-lg;
-}
-</style>

@@ -2,6 +2,7 @@ import type { RouterOptions } from '@nuxt/schema'
 
 export default <RouterOptions> {
   scrollBehavior(to, _from, savedPosition) {
+    // console.log(to, savedPosition)
     if (savedPosition) {
       return savedPosition
     }
@@ -9,7 +10,7 @@ export default <RouterOptions> {
       if (to.hash) {
         return {
           el: to.hash,
-          top: 0,
+          // top: 0,
           behavior: 'smooth',
         }
       }

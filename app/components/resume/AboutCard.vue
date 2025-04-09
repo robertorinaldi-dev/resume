@@ -7,27 +7,24 @@ defineProps({
 })
 
 const menu = [
-  { name: 'experience', title: 'Esperienze lavorative', icon: 'BriefcaseIcon', hash: '#experience' },
-  { name: 'education', title: 'Formazione', icon: 'AcademicCapIcon', hash: '#education' },
-  // { route: 'project', name: 'menu.project', icon: 'CodeBracketIcon' },
+  { name: 'experience', title: 'Esperienze lavorative', icon: 'BriefcaseIcon' },
+  { name: 'education', title: 'Formazione', icon: 'AcademicCapIcon' },
 ]
+
+const model = defineModel({
+  type: String,
+})
 </script>
 
 <template>
   <ResumeCard>
-    <h2 class="text-foreground mb-4 text-lg font-semibold">
-      Su di me
-    </h2>
-    <p class="mb-5 text-sm text-secondary-foreground" v-html="data" />
-    <!-- <div class="my-5 border-t border-dashed border-gray-200"></div> -->
+    <h2 class="text-foreground mb-4 text-lg font-semibold">Su di me</h2>
+    <p class="text-secondary-foreground mb-5 text-sm" v-html="data" />
     <ul class="inline-flex gap-3">
-      <!-- Menu -->
-      <li v-for="(item, index) of menu" :key="index">
-        <NuxtLinkLocale :to="item" class="group inline-block">
-          <MediaHeroIcon :icon="item.icon" is-link >
-            {{ $t(item.title) }}
-          </MediaHeroIcon>
-        </NuxtLinkLocale>
+      <li v-for="(item, index) of menu" :key="index" class="group">
+        <MediaHeroIcon :icon="item.icon" is-link @click="model = item.name" :is-selected="model === item.name">
+          {{ item.title }}
+        </MediaHeroIcon>
       </li>
     </ul>
   </ResumeCard>

@@ -192,7 +192,7 @@ export default defineNuxtConfig({
   routeRules: {
     '/': {
       redirect: {
-        to: '/experience',
+        to: '/resume',
         statusCode: 301,
       },
     },

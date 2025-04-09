@@ -9,20 +9,15 @@ const props = defineProps({
 })
 
 const total = computed(() => {
-  return props.data.length;
-});
+  return props.data.length
+})
 </script>
 
 <template>
   <ResumeCard>
-    <h2 class="mb-5 text-lg font-semibold" id="education">
-      Formazione
-    </h2>
-
-    <ResumeEducationCardItem
-      v-for="(item, index) in data"
-      :key="index"
-      :data="item"
-      :separator="total > index + 1" />
+    <NuxtLinkLocale id="education" :to="{ name: 'education', hash: '#education' }">
+      <h2 class="mb-5 text-lg font-semibold" id="education">Formazione</h2>
+    </NuxtLinkLocale>
+    <ResumeEducationCardItem v-for="(item, index) in data" :key="index" :data="item" :separator="total > index + 1" />
   </ResumeCard>
 </template>

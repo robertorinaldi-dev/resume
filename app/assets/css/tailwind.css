@@ -60,6 +60,8 @@
   }
 
   html {
+    font-size: 16px;
+    scrollbar-gutter: stable;
     @apply w-full min-w-[400px] overflow-auto;
   }
 
@@ -121,12 +123,27 @@
       }
     }
   }
+}
 
+@layer components {
   button,
   .btn {
     @apply bg-primary text-foreground hover:bg-primary/90 focus-visible:outline-primary inline-flex cursor-pointer justify-center rounded-md px-3 py-2 text-sm font-semibold shadow-xs focus:outline-hidden focus-visible:outline-2 focus-visible:outline-offset-2;
   }
 }
 
-@layer components {
+@layer utilities {
+  .blur-enter-active,
+  .blur-leave-active {
+    @apply min-h-screen transition-all duration-500;
+  }
+
+  .blur-leave-active {
+    @apply absolute inset-0 w-full;
+  }
+
+  .blur-enter-from,
+  .blur-leave-to {
+    @apply opacity-0 blur-lg;
+  }
 }
