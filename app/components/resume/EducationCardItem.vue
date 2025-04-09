@@ -12,8 +12,8 @@ defineProps({
 
 <template>
   <div class="mb-5 flex items-start">
-    <div class="flex size-14 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-white p-1">
-      <img :src="data.collegeLogo" alt="Avatar" class="size-full object-contain" />
+    <div class="bg-white flex size-14 shrink-0 items-center justify-center overflow-hidden rounded-xl p-1">
+      <img :src="data.collegeLogo" alt="Avatar" class="size-full object-contain mix-blend-multiply" />
     </div>
     <div class="ml-3 w-full space-y-5">
       <div class="items-start justify-between sm:flex">
@@ -21,26 +21,24 @@ defineProps({
           <div class="font-medium">
             {{ data.college }}
           </div>
-          <div class="flex space-x-5 text-secondary-foreground">
-            <div class="flex items-start gap-1 text-sm font-medium ">
+          <div class="text-secondary-foreground flex space-x-5">
+            <div class="flex items-start gap-1 text-sm font-medium">
               <!-- <HeroIcon :icon="'AcademicCapIcon'" class="h-4 w-4 shrink-0" /> -->
               <span class="max-w-sm">{{ data.course }}</span>
             </div>
           </div>
         </div>
         <div class="flex shrink-0 items-center justify-between gap-2 sm:flex-col sm:items-end">
-          <ResumeTag
-            v-if="data.degree"
-          >
+          <ResumeTag v-if="data.degree">
             {{ data.degree }}
           </ResumeTag>
-          <div class="flex items-center justify-end gap-3 text-sm font-medium ">
+          <div class="flex items-center justify-end gap-3 text-sm font-medium">
             <MediaHeroIcon icon="CalendarIcon" />
             <span>{{ data.start }} - {{ data.end }}</span>
           </div>
         </div>
       </div>
-      <div v-if="separator" class="border-b border-hover" />
+      <div v-if="separator" class="border-hover border-b" />
     </div>
   </div>
 </template>
