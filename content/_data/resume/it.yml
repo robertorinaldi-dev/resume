@@ -69,17 +69,17 @@ skill:
 language:
   - name: Italiano
     code: it-IT
-    flag: media/lang/it.png
+    flag: /media/lang/it.png
     level: Madrelingua
   - name: English
     code: en-US
-    flag: media/lang/en.png
+    flag: /media/lang/en.png
     level: Buone capacità di comprensione della lingua parlata e scritta
 
 experience:
   - job: Web developer Full stack
     company: MGquadro Srl
-    companyLogo: media/resume/experience/mgquadro.png
+    companyLogo: /media/resume/experience/mgquadro.png
     location: Roma
     workType: Ibrido
     start: 2017
@@ -90,13 +90,25 @@ experience:
     workList:
       - Sviluppo siti web Nuxt
       - Sviluppo animazioni in GSAP e D3.js
-      - Sviluppo CMS headless ed applicazioni gestionali con Laravel/Filament
-      - Sviluppo soluzioni web enterprise con Laravel e Vue.js
-      - Gestione server Linux
-      - Sviluppo API RESTful
+      - Sviluppo CMS headless ed applicazioni gestionali con Laravel e Filament
       - Sviluppo e manutenzione siti Wordpress e Drupal
-      - Manutenzione e miglioramento del sistema di gestione delle prenotazioni per la Federazione Italiana Tennis e Padel
-      - Creazione template HTML e sviluppo di integrazioni Javascript/Jquery e API Nitro per il sistema webshop di TicketOne
+      - Sviluppo API RESTful con Laravel
+      - Gestione server Linux
+      - >
+        <b>Per la Federazione Italiana Tennis e Padel:</b> 
+        <ul>
+          <li>
+            Manutenzione e miglioramento dei sistemi di gestione delle prenotazioni in Drupal per gli Internazionali Bnl d'Italia, le Next Gen ATP Finals, le ATP Finals e la Coppa Davis
+          </li>
+          <li>
+            Sviluppo e manutenzione dei siti ticketing informativi degli Internazionali Bnl d'Italia, delle ATP Finals, della Coppa Davis, della Bnl Italy Major Premier Padel e delle Gift Card Grandi Eventi FITP
+          </li>
+          <li>
+            Creazione template HTML e sviluppo di integrazioni Javascript/Jquery e API Nitro per la gestione dei tesserati FITP all'interno dei sistemi webshop TicketOne
+          </li>
+        </ul>
+      - >
+        <b>Per TicketOne:</b> creazione template HTML e sviluppo di integrazioni Javascript/Jquery e API Nitro per sistemi webshop di vari clienti
   - job: PHP developer e System Administrator
     company: Associazione Donatrici Italiane Sangue Cordone Ombelicale
     companyLogo: media/resume/experience/adisco.jpg

@@ -44,8 +44,8 @@ defineProps({
         </div>
         <p class="my-2 text-xs" v-html="data.description" />
         <ul class="prose dark:prose-dark prose-li:list-disc">
-          <li v-for="item in data.workList" :key="item" class="text-secondary-foreground text-sm">
-            {{ item }}
+          <li v-for="item in data.workList" :key="item" class="text-secondary-foreground text-sm" v-html="item">
+            
           </li>
         </ul>
       </div>
