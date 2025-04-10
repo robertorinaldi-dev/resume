@@ -11,12 +11,12 @@ export default defineNuxtConfig({
     head: {
       link: [
         // https://realfavicongenerator.net/
-        // {
-        //   rel: 'icon',
-        //   type: 'image/png',
-        //   sizes: '96x96',
-        //   href: '/favicons/favicon-96x96.png',
-        // },
+        {
+          rel: 'icon',
+          type: 'image/png',
+          // sizes: '96x96',
+          href: '/favicon.png',
+        },
         // {
         //   rel: 'icon',
         //   type: 'image/svg+xml',
