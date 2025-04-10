@@ -57,6 +57,7 @@ skill:
   - Linux
   - Livewire
   - MySQL
+  - Netlify
   - Nitro
   - Nuxt
   - PHP
@@ -95,7 +96,7 @@ experience:
       - Sviluppo API RESTful con Laravel
       - Gestione server Linux
       - >
-        <b>Per la Federazione Italiana Tennis e Padel:</b> 
+        <b>Per la Federazione Italiana Tennis e Padel:</b>
         <ul>
           <li>
             Manutenzione e miglioramento dei sistemi di gestione delle prenotazioni in Drupal per gli Internazionali Bnl d'Italia, le Next Gen ATP Finals, le ATP Finals e la Coppa Davis
@@ -136,7 +137,7 @@ experience:
       - Gestione mail su server Linux
   - job: Java Developer e tecnico informatico
     company: Associazione Italiana Ambulanti Rotativi Commercianti
-    companyLogo: 
+    companyLogo:
     location: Roma
     workType: ibrido
     start: 2012
