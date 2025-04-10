@@ -1,8 +1,8 @@
 export const site = {
-  name: 'MGquadro',
-  url: 'https://mgquadro.com',
+  name: 'Roberto Rinaldi',
+  url: 'https://robertorinaldi.dev',
   description: '',
-  image: '/img/logo.png',
+  image: '',
   facebookAppId: '',
-  twitterSite: '@mgquadro',
+  twitterSite: '',
 }
