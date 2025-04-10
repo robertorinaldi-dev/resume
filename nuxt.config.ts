@@ -193,7 +193,7 @@ export default defineNuxtConfig({
     '/': {
       redirect: {
         to: '/resume',
-        statusCode: 301,
+        statusCode: 302,
       },
     },
   },
